@@ -22,7 +22,7 @@ func main() {
 	host, port, _ := net.SplitHostPort(u.Host)
 	fmt.Println(host)
 	fmt.Println(port)
-	
+
 	fmt.Println(u.Path)
 	fmt.Println(u.Fragment)
 

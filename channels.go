@@ -9,6 +9,6 @@ func main() {
 		messages <- "ping"
 	}()
 
-	msg := <- messages
+	msg := <-messages
 	fmt.Println(msg)
 }

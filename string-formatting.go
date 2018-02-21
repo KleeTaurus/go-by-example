@@ -19,7 +19,7 @@ func main() {
 	fmt.Printf("%c\n", 33)
 	fmt.Printf("%x\n", 456)
 	fmt.Printf("%f\n", 78.9)
-	
+
 	fmt.Printf("%e\n", 123400000.0)
 	fmt.Printf("%E\n", 123400000.0)
 

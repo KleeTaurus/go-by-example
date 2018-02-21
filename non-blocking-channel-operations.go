@@ -14,10 +14,10 @@ func main() {
 	}
 
 	/*
-	A non-blocking send works similarly. Here msg cannot be 
-	sent to the messages channel, because the channel has no 
-	buffer and there is no receiver. Therefore the default case 
-	is selected.*/
+		A non-blocking send works similarly. Here msg cannot be
+		sent to the messages channel, because the channel has no
+		buffer and there is no receiver. Therefore the default case
+		is selected.*/
 	msg := "hi"
 	select {
 	case messages <- msg:
@@ -27,9 +27,9 @@ func main() {
 	}
 
 	select {
-	case msg := <- messages:
+	case msg := <-messages:
 		fmt.Println("received message", msg)
-	case sig := <- signals:
+	case sig := <-signals:
 		fmt.Println("received signal", sig)
 	default:
 		fmt.Println("no activity")

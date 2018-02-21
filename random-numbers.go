@@ -11,8 +11,8 @@ func main() {
 
 	fmt.Println(rand.Float64())
 
-	fmt.Print(rand.Float64() * 5 + 5, ",")
-	fmt.Print(rand.Float64() * 5 + 5)
+	fmt.Print(rand.Float64()*5+5, ",")
+	fmt.Print(rand.Float64()*5 + 5)
 	fmt.Println()
 
 	s1 := rand.NewSource(time.Now().UnixNano())
